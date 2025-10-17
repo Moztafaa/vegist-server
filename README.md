@@ -31,13 +31,13 @@ Follow these steps to get the API up and running on your local machine:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/Moztafaa/mobile_api.git
+   git clone https://github.com/Moztafaa/vegist-server.git
    ```
 
 2. Install the project dependencies using npm:
 
    ```bash
-   cd mobile_api
+   cd vegist-server
    npm install
    ```
 
