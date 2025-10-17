@@ -1,0 +1,16 @@
+docker run -d \
+  --name my-mongo \
+  -p 27017:27017 \
+  -v mongo-data:/data/db \
+  -e MONGO_INITDB_ROOT_USERNAME=mostafa \
+  -e MONGO_INITDB_ROOT_PASSWORD=mostafa \
+  mongo:latest
+
+
+  ru46kKdxgLzLpkCh
+
+  imoztafa_db_user
+
+  Mostafa12345#
+
+  moztafa_mongo
