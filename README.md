@@ -5,6 +5,7 @@ A clean, minimal Node.js/Express/TypeScript backend API with authentication and 
 ## Features
 
 - ✅ User registration and login with JWT authentication
+- ✅ **Google OAuth 2.0 authentication** (NEW!)
 - ✅ Password hashing with bcrypt
 - ✅ User profile management (CRUD operations)
 - ✅ Role-based authorization (admin, user)
@@ -48,6 +49,9 @@ Follow these steps to get the API up and running on your local machine:
    MONGO_URI=mongodb://localhost:27017/your_database_name
    NODE_ENV=development
    JWT_SECRET=your_jwt_secret_key
+   GOOGLE_CLIENT_ID=your_google_client_id
+   GOOGLE_CLIENT_SECRET=your_google_client_secret
+   FRONTEND_URL=http://localhost:4200
    ```
 
 4. Start the server:
@@ -66,8 +70,15 @@ Follow these steps to get the API up and running on your local machine:
 
 ### Authentication
 
+#### Traditional Auth
 - `POST /api/auth/register` - Register new user
 - `POST /api/auth/login` - Login user
+
+#### Google OAuth 2.0
+- `GET /api/auth/google` - Initiate Google OAuth flow
+- `GET /api/auth/google/callback` - Google OAuth callback (redirects to frontend with token)
+
+> 📖 For detailed Google OAuth setup instructions, see [GOOGLE_OAUTH_SETUP.md](./GOOGLE_OAUTH_SETUP.md)
 
 ### Users
 
